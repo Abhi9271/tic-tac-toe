@@ -1,6 +1,6 @@
 # Tic Tac Toe React App
 
-##Functionality Added
+## Functionality Added
 * Squares are highlighted on mouse hover using CSS
 * the Board game size has been changed
 * Button layout improved with the use of Transparent buttons using Bootstrap 4
