@@ -1,13 +1,75 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 25px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: rgb(251, 252, 222);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text {
+  font: 20px "Century Gothic", Futura, sans-serif;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+li {
+  margin-top: 10px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(255, 255, 255);
+  border: 1px solid #999;
+  float: left;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 150px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+}
+
+.square:hover {
+  background-color: rgb(229, 253, 245);
+  box-shadow: 0 1px 2px #fff, /*bottom external highlight*/ 0 -1px 1px #666,
+    /*top external shadow*/ inset 0 -1px 1px rgba(0, 0, 0, 0.5),
+    /*bottom internal shadow*/ inset 0 1px 1px rgba(255, 255, 255, 0.8); /*top internal highlight*/
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.margin {
+  margin: 20px;
+  margin-left: 100px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.square.highlight {
+  background: rgb(183, 253, 121);
 }
